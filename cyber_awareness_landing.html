@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Transform Cybersecurity Training into an Engaging Game</title>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
+      --maxw:1100px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071226 0%, #081827 60%);color:#e6eef6;min-height:100vh;line-height:1.4}
+    .wrap{max-width:var(--maxw);margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(2,6,23,.6)}
+    .logo svg{width:36px;height:36px}
+    h1{font-size:28px;margin:0}
+    .sub{color:var(--muted);font-size:14px}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 480px;gap:28px;align-items:center;margin-top:18px}
+    .hero-left{padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;box-shadow:0 6px 30px rgba(2,6,23,.6);}
+    .headline{font-size:36px;margin:0 0 12px}
+    .support{color:var(--muted);margin-bottom:18px}
+    .benefits{display:flex;gap:10px;flex-wrap:wrap}
+    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;color:#d6e6ef;font-weight:600;font-size:13px}
+    .cta-row{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:12px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:#042a2f}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    /* hero right mock device */
+    .device{background:linear-gradient(135deg,#051523 0%, #062233 100%);border-radius:14px;padding:18px;box-shadow:0 12px 40px rgba(2,6,23,.75);}
+    .screen{background:linear-gradient(180deg,#081a26,#06202b);border-radius:8px;padding:14px;height:380px;display:flex;flex-direction:column;gap:12px}
+    .topbar{display:flex;align-items:center;gap:10px}
+    .avatar{width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:flex;align-items:center;justify-content:center}
+    .mission{flex:1;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border:1px solid rgba(255,255,255,0.03)}
+    .mission h4{margin:0 0 6px}
+    .progress{height:8px;background:rgba(255,255,255,0.04);border-radius:10px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7c3aed);width:62%}
+    .badges{display:flex;gap:8px;align-items:center}
+
+    /* features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+    .card{background:var(--card);padding:16px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card h5{margin:0 0 8px}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* testimonial */
+    .testimonials{margin-top:26px;display:flex;flex-direction:column;gap:12px}
+    .t-item{display:flex;gap:12px;align-items:flex-start;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .t-avatar{width:56px;height:56px;border-radius:10px;flex-shrink:0;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800}
+    .t-meta{flex:1}
+    .t-name{font-weight:700}
+    .t-role{color:var(--muted);font-size:13px}
+
+    footer{margin-top:28px;color:var(--muted);font-size:13px;padding:12px;text-align:center}
+
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .device{order:-1}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">
+          <!-- inline SVG logo -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="6" fill="white" opacity="0.08"/><path d="M7 12h10M12 7v10" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <h3 style="margin:0">CyberPlay</h3>
+          <div class="sub">Transform Cybersecurity Training into an Engaging Game</div>
+        </div>
+      </div>
+      <nav class="sub">
+        <span style="margin-right:14px">Features</span>
+        <span style="margin-right:14px">Analytics</span>
+        <span>Pricing</span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="headline">Transform Cybersecurity Training into an Engaging Game</div>
+        <div class="support">Ditch the boring slides and videos — our narrative-driven web game uses interactive storytelling, real-world simulations, and gamification to make employees <strong>want</strong> to learn cyber awareness.</div>
+        <div class="benefits">
+          <div class="pill">Interactive Storytelling</div>
+          <div class="pill">Simulated Phishing</div>
+          <div class="pill">Adaptive Learning</div>
+          <div class="pill">SSO Integration</div>
+        </div>
+
+        <p style="margin-top:18px" class="muted">Our web-based cyber awareness game delivers cost-effective, accessible, and highly engaging training for businesses. By combining storytelling, gamification, and real-world testing, it helps employees recognise threats and change behaviour — reducing risk while making learning enjoyable.</p>
+
+        <div class="cta-row">
+          <button class="btn btn-primary">Book a Free Demo for Your Team Today</button>
+          <button class="btn btn-ghost">See the Training in Action</button>
+        </div>
+
+        <div class="features" style="margin-top:22px">
+          <div class="card">
+            <h5>Interactive Storytelling</h5>
+            <p class="muted">Scenario-driven missions help learners apply knowledge in realistic contexts.</p>
+          </div>
+          <div class="card">
+            <h5>Real-World Testing</h5>
+            <p class="muted">Simulated phishing and incident drills test decisions, not just recall.</p>
+          </div>
+          <div class="card">
+            <h5>Analytics Dashboard</h5>
+            <p class="muted">Measure improvement, report compliance, and target training where it's needed.</p>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <div class="t-item">
+            <div class="t-avatar">RS</div>
+            <div class="t-meta">
+              <div class="t-name">Rajiv Sharma <span class="t-role">— IT Manager, Finance</span></div>
+              <div class="muted">“After switching to this game-based training, phishing click rates in our company dropped by almost half. Employees are more alert and proactive now.”</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-avatar">SM</div>
+            <div class="t-meta">
+              <div class="t-name">Sarah Mitchell <span class="t-role">— HR Director, Retail</span></div>
+              <div class="muted">“What stood out was how engaged our staff became. They were talking about the scenarios with each other — that’s real learning.”</div>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-avatar">EZ</div>
+            <div class="t-meta">
+              <div class="t-name">Emily Zhang <span class="t-role">— Customer Support Specialist</span></div>
+              <div class="muted">“I actually enjoyed the training. When I got a suspicious email last week, I remembered the game and reported it immediately.”</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="device" aria-hidden="true">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+          <div style="display:flex;gap:8px;align-items:center">
+            <div class="avatar">CP</div>
+            <div>
+              <div style="font-weight:700">Mission: Secure the Office</div>
+              <div class="muted" style="font-size:13px">Scenario: Suspicious email reported by staff</div>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--muted)">Progress: <strong>62%</strong></div>
+        </div>
+
+        <div class="screen">
+          <div class="topbar">
+            <div style="width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.06)"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.06)"></div>
+            <div style="width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.06)"></div>
+            <div style="flex:1"></div>
+            <div style="font-size:12px;color:var(--muted)">Level 3 • Analyst</div>
+          </div>
+
+          <div class="mission">
+            <h4>Phishing Email - Identify the Threat</h4>
+            <p class="muted">You received an email claiming to be from HR asking to update bank details. Choose the safest action.</p>
+            <div style="display:flex;gap:8px;margin-top:12px">
+              <button class="btn btn-ghost" style="padding:8px 12px">Report to Security</button>
+              <button class="btn" style="padding:8px 12px;background:#0b2a36">Reply & Ask for Proof</button>
+              <button class="btn" style="padding:8px 12px;background:#10222a">Ignore</button>
+            </div>
+          </div>
+
+          <div style="margin-top:auto">
+            <div class="progress"><i></i></div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:13px;color:var(--muted)">
+              <div>Next mission in: 2 days</div>
+              <div class="badges">
+                <div style="font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02)">Badge: Phish-Guard</div>
+                <div style="font-size:12px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02)">XP +120</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 CyberPlay — Built for SMEs. Designed for real learning. • <span style="color:var(--muted)">Contact: hello@cyberplay.example</span>
+    </footer>
+  </div>
+
+  <!-- Small accessibility improvement for keyboard users -->
+  <script>
+    document.querySelectorAll('.btn').forEach(b=>b.addEventListener('keydown', e=>{ if(e.key=== 'Enter') b.click() }));
+  </script>
+</body>
+</html>
